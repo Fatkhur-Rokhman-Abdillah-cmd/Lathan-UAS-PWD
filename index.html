@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Daftar layanan desain dan pengembangan web Code Studio.">
+    <title>Layanan | Code Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Navigasi utama">
+            <a class="brand" href="index.html">Code Studio</a>
+            <ul>
+                <li><a class="active" aria-current="page" href="#">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a href="#">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="judul-utama">
+            <div class="hero-content">
+                <p class="eyebrow">Solusi digital untuk bisnis Anda</p>
+                <h1 id="judul-utama">Bangun ide menjadi pengalaman digital.</h1>
+                <p>
+                    Pilih layanan desain dan pengembangan web yang sesuai dengan kebutuhan
+                    bisnis Anda.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#layanan">Lihat Layanan</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="layanan" class="content-section" aria-labelledby="judul-layanan">
+            <h2 id="judul-layanan" class="section-title">Layanan Kami</h2>
+            <p class="section-intro">Paket layanan pilihan untuk membantu bisnis Anda berkembang.</p>
+
+            <div class="order-tools">
+                <label for="categoryFilter">Filter kategori layanan</label>
+                <select id="categoryFilter">
+                    <option value="semua">Semua kategori</option>
+                    <option value="desain">Desain</option>
+                    <option value="pengembangan">Pengembangan</option>
+                    <option value="pemeliharaan">Pemeliharaan</option>
+                </select>
+            </div>
+
+            <div class="features service-grid">
+                <article class="feature-card service-card" data-kategori="desain" data-harga="750000">
+                    <p class="service-category">Desain</p>
+                    <h3>Desain Website</h3>
+                    <p>Desain antarmuka yang menarik, mudah digunakan, dan sesuai dengan identitas merek.</p>
+                    <p class="service-price">Rp750.000</p>
+                    <lable class="quantity-label" for="jumlah-desain">Jumlah pesanan</lable>
+                    <input class="quantity-input" id="jumlah-desain" type="number" min="0" step="1" value="0" inputmode="numeric">
+                </article>
+
+                <article class="feature-card service-card" data-kategori="pengembangan" data-harga="1500000">
+                    <p class="service-category">Pengembangan</p>
+                    <h3>Pembuatan Website</h3>
+                    <p>Website responsif dengan struktur HTML, CSS, dan JavaScript yang rapi.</p>
+                    <p class="service-price">Rp1.500.000</p>
+                    <label class="quantity-label" for="jumlah-pengembangan">Jumlah pesanan</label>
+                    <input class="quantity-input" id="jumlah-pengembangan" type="number" min="0" step="1" value="0" inputmode="numeric">
+                </article>
+
+                <article class="feature-card service-card" data-kategori="pemeliharaan" data-harga="500000">
+                    <p class="service-category">Pemeliharaan</p>
+                    <h3>Perawatan Website</h3>
+                    <p>Pembaruan konten dan pemeriksaan berkala agar website tetap berjalan baik.</p>
+                    <p class="service-price">Rp500.000</p>
+                    <label class="quantity-label" for="jumlah-pemeliharaan">Jumlah pesanan</label>
+                    <input class="quantity-input" id="jumlah-pemeliharaan" type="number" min="0" step="1" value="0" inputmode="numeric">
+                </article>
+            </div>
+
+            <section class="order-summary" aria-labelledby="judul-ringkasan">
+                <div>
+                    <h3 id="judul-ringkasan">Ringkasan Pesanan</h3>
+                    <p>Jumlah layanan: <strong id="orderCount" aria-live="polite">0</strong></p>
+                    <p>Total pesanan: <strong id="orderTotal" aria-live="polite">Rp0</strong></p>
+                </div>
+                <button class="btn btn-reset" id="resetOrder" type="button">Reset Pesanan</button>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Code Studio. Seluruh hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>
