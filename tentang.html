@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Daftar layanan desain dan pengembangan web Code Studio.">
-    <title>Layanan | Code Studio</title>
+    <meta name="description" content="Pencapaian Code Studio dalam membangun solusi digital untuk bisnis.">
+    <title>Pencapaian | Code Studio</title>
     <link rel="stylesheet" href="css/style.css">
     <script defer src="js/script.js"></script>
 </head>
@@ -23,69 +23,41 @@
     <main>
         <section class="hero-tentang" aria-labelledby="judul-tentang">
             <div class="hero-content">
-                <p class="eyebrow">Tentang kami,</p>
+                <p class="eyebrow">Tentang kami</p>
                 <h2 id="judul-tentang">Code Studio adalah layanan web development yang membantu bisnis Anda tumbuh.</h2>
                 <p>
-                    Pilih layanan desain dan pengembangan web yang sesuai dengan kebutuhan
-                    bisnis Anda.
+                    Kami menghadirkan solusi digital melalui desain dan pengembangan website
+                    yang sesuai dengan kebutuhan bisnis.
                 </p><br>
                 <div class="hero-actions">
-                    <a class="btn btn-primary" href="#layanan">Lihat Layanan</a>
+                    <a class="btn btn-primary" href="#pencapaian">Lihat Pencapaian</a>
                 </div>
             </div>
         </section>
 
-        <section id="layanan" class="content-section" aria-labelledby="judul-layanan">
-            <h2 id="judul-layanan" class="section-title">Profile Kami</h2>
-            <p class="section-intro">Profile mengenai Bisnis yang kami buat.</p>
+        <section id="pencapaian" class="content-section" aria-labelledby="judul-pencapaian">
+            <h2 id="judul-pencapaian" class="section-title">Pencapaian Kami</h2>
+            <p class="section-intro">Hasil yang kami upayakan untuk membantu bisnis berkembang di dunia digital.</p>
 
-            <div class="order-tools">
-                <label for="categoryFilter">Filter kategori layanan</label>
-                <select id="categoryFilter">
-                    <option value="semua">Semua kategori</option>
-                    <option value="desain">Desain</option>
-                    <option value="pengembangan">Pengembangan</option>
-                    <option value="pemeliharaan">Pemeliharaan</option>
-                </select>
+            <div class="features service-grid">
+                <article class="feature-card">
+                    <p class="service-category">Kehadiran Digital</p>
+                    <h3>Membangun Identitas Online</h3>
+                    <p>Membantu bisnis memiliki website profesional sebagai pusat informasi dan representasi merek.</p>
+                </article>
+
+                <article class="feature-card">
+                    <p class="service-category">Pengalaman Pengguna</p>
+                    <h3>Menghadirkan Website Responsif</h3>
+                    <p>Mengembangkan tampilan yang mudah digunakan dan menyesuaikan diri dengan berbagai ukuran layar.</p>
+                </article>
+
+                <article class="feature-card">
+                    <p class="service-category">Dukungan Bisnis</p>
+                    <h3>Mendukung Pertumbuhan Bisnis</h3>
+                    <p>Menyediakan solusi digital yang membantu bisnis menjangkau pelanggan dan menyampaikan informasi dengan lebih baik.</p>
+                </article>
             </div>
-
-            <div class="features-service-grid">
-                <article class="feature-card service-card" data-kategori="desain" data-harga="750000">
-                    <p class="service-category">Desain</p>
-                    <h3>Desain Website</h3>
-                    <p>Desain antarmuka yang menarik, mudah digunakan, dan sesuai dengan identitas merek.</p>
-                    <p class="service-price">Rp750.000</p>
-                    <lable class="quantity-label" for="jumlah-desain">Jumlah pesanan</lable>
-                    <input class="quantity-input" id="jumlah-desain" type="number" min="0" step="1" value="0" inputmode="numeric">
-                </article><br>
-
-                <article class="feature-card service-card" data-kategori="pengembangan" data-harga="1500000">
-                    <p class="service-category">Pengembangan</p>
-                    <h3>Pembuatan Website</h3>
-                    <p>Website responsif dengan struktur HTML, CSS, dan JavaScript yang rapi.</p>
-                    <p class="service-price">Rp1.500.000</p>
-                    <label class="quantity-label" for="jumlah-pengembangan">Jumlah pesanan</label>
-                    <input class="quantity-input" id="jumlah-pengembangan" type="number" min="0" step="1" value="0" inputmode="numeric">
-                </article><br>
-
-                <article class="feature-card service-card" data-kategori="pemeliharaan" data-harga="500000">
-                    <p class="service-category">Pemeliharaan</p>
-                    <h3>Perawatan Website</h3>
-                    <p>Pembaruan konten dan pemeriksaan berkala agar website tetap berjalan baik.</p>
-                    <p class="service-price">Rp500.000</p>
-                    <label class="quantity-label" for="jumlah-pemeliharaan">Jumlah pesanan</label>
-                    <input class="quantity-input" id="jumlah-pemeliharaan" type="number" min="0" step="1" value="0" inputmode="numeric">
-                </article><br>
-            </div>
-
-            <section class="order-summary" aria-labelledby="judul-ringkasan">
-                <div>
-                    <h3 id="judul-ringkasan">Ringkasan Pesanan</h3>
-                    <p>Jumlah layanan: <strong id="orderCount" aria-live="polite">0</strong></p>
-                    <p>Total pesanan: <strong id="orderTotal" aria-live="polite">Rp0</strong></p>
-                </div>
-                <button class="btn btn-reset" id="resetOrder" type="button">Reset Pesanan</button>
-            </section>
         </section>
     </main>
 
