@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif, Tahoma, Verdana, sans-serif;
     background-color: var(--bg);
     color: var(--text);
     line-height: 1.6;
@@ -95,6 +95,19 @@ main {
     background-position: 150% 500%;
     box-shadow: 0 18px 35px var(--shadow);
 }
+.hero-tentang {
+    position: relative;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem;
+    margin-top: 1rem;
+    border-radius: 22px;
+    background-image: linear-gradient(rgba(0, 81, 255, 0.55), rgba(0, 31, 126, 0.742));
+    background-position: 150% 500%;
+    box-shadow: 0 18px 35px var(--shadow);
+}
 
 .hero-content {
     text-align: center;
@@ -127,15 +140,16 @@ main {
 .hero-actions {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: 1px;
     flex-wrap: wrap;
 }
+
 
 .btn {
     display: inline-block;
     text-decoration: none;
     border-radius: 999px;
-    padding: 0.9rem 1.4rem;
+    padding: 12px 24px;
     font-weight: 700;
     transition: 0.25s ease;
 }
@@ -176,6 +190,10 @@ main {
 }
 
 .service-grid {
+    align-items: stretch;
+}
+
+.features-service-grid {
     align-items: stretch;
 }
 
