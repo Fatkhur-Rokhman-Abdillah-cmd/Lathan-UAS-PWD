@@ -319,7 +319,7 @@ main {
 }
 
 .page-hero {
-    background: linear-gradient(135deg, #0f172a, #1d4ed8);
+    background: linear-gradient(135deg, #6b95f5, #1d4ed8);
     border-radius: 20px;
     padding: 4rem 1.5rem;
     text-align: center;
@@ -370,6 +370,72 @@ main {
 
 .form-status.error {
     color: #b91c1c;
+}
+
+.contact-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+    gap: 1.5rem;
+    align-items: start;
+}
+
+.contact-info,
+.contact-form {
+    padding: 1.75rem;
+}
+
+.contact-info p + p {
+    margin-top: 1rem;
+}
+
+.contact-form h2 {
+    margin-bottom: 1.25rem;
+    color: var(--dark);
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    margin-bottom: 1rem;
+}
+
+.form-field label {
+    color: var(--dark);
+    font-weight: 700;
+}
+
+.form-field input,
+.form-field textarea {
+    width: 100%;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.75rem 0.85rem;
+    color: var(--text);
+    background: var(--surface);
+    font: inherit;
+}
+
+.form-field textarea {
+    resize: vertical;
+}
+
+.form-field input:focus,
+.form-field textarea:focus {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+}
+
+.contact-form .btn-primary {
+    border: 0;
+    cursor: pointer;
+    font: inherit;
+}
+
+.form-note {
+    margin-top: 0.75rem;
+    color: var(--muted);
+    font-size: 0.9rem;
 }
 
 footer {

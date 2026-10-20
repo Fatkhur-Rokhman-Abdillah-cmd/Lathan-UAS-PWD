@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hubungi Code Studio untuk berdiskusi tentang kebutuhan website bisnis Anda.">
+    <title>Kontak | Code Studio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar" aria-label="Navigasi utama">
+            <a class="brand" href="index.html">Code Studio</a>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang.html">Tentang</a></li>
+                <li><a class="active" aria-current="page" href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-hero" aria-labelledby="judul-kontak">
+            <p class="eyebrow">Kami siap membantu</p>
+            <h1 id="judul-kontak">Hubungi Code Studio</h1>
+            <p>Ceritakan kebutuhan website Anda. Kami siap berdiskusi tentang solusi yang tepat untuk bisnis Anda.</p>
+        </section>
+
+        <section class="content-section contact-layout" aria-label="Formulir kontak">
+            <div class="contact-info">
+                <h2>Mari berdiskusi</h2>
+                <p>Isi formulir dengan informasi yang diperlukan agar kami memahami kebutuhan dan dapat menindaklanjuti pesan Anda.</p>
+                <p>Pastikan alamat email yang dicantumkan aktif dan dapat dihubungi.</p>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <h2>Kirim Pesan</h2>
+                <div class="form-field">
+                    <label for="name">Nama</label>
+                    <input id="name" name="name" type="text" autocomplete="name" required>
+                </div>
+                <div class="form-field">
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" autocomplete="email" required>
+                </div>
+                <div class="form-field">
+                    <label for="subject">Subjek</label>
+                    <input id="subject" name="subject" type="text" required>
+                </div>
+                <div class="form-field">
+                    <label for="message">Pesan</label>
+                    <textarea id="message" name="message" rows="6" required></textarea>
+                </div>
+                <button class="btn btn-primary" type="submit">Kirim Pesan</button>
+                <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+                <p class="form-note">Catatan: formulir ini belum terhubung ke layanan pengiriman pesan.</p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Code Studio. Seluruh hak cipta dilindungi.</p>
+    </footer>
+</body>
+</html>

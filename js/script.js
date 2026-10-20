@@ -72,19 +72,10 @@ document.addEventListener('DOMContentLoaded', function () {
             event.preventDefault();
 
             const name = document.getElementById('name');
-            const email = document.getElementById('email');
-            const message = document.getElementById('message');
             const status = document.getElementById('formStatus');
 
-            if (!name.value.trim() || !email.value.trim() || !message.value.trim()) {
-                status.textContent = 'Please complete all fields before sending the message.';
-                status.classList.add('error');
-                return;
-            }
-
-            status.textContent = `Thank you, ${name.value.trim()}! Your message has been sent successfully.`;
+            status.textContent = `Terima kasih, ${name.value.trim()}. Formulir berhasil divalidasi, tetapi pesan belum dikirim karena formulir ini belum terhubung ke layanan pengiriman.`;
             status.classList.remove('error');
-            contactForm.reset();
         });
     }
 });
